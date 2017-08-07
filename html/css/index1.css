@@ -1,0 +1,273 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.video-header {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+.video-header, .video-header video, .video-header .viewport-header {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.video-header video {
+    background: brown;
+    object-fit: cover;
+}
+.video-header .viewport-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+html, body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 150%;
+    line-height: 1.4;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+
+    letter-spacing: 3vw;
+
+    line-height: 1.2;
+    font-size: 3vw;
+    text-align: center;
+
+}
+h1 span {
+    display: block;
+    font-size: 10vw;
+    letter-spacing: -1.3vw;
+}
+
+
+#show{
+    background: rgba(212, 255, 253, 0.5);
+    position: relative;
+    padding: 1rem;
+    width: 97vw;
+    margin: 100vh 0 0 0 ;
+
+
+}
+#show::before {
+    content: "";
+    width: 95vw;
+    height: 100vh;
+    position: absolute;
+
+    left: 0;
+    top: -100vh;
+}
+#show .main-content {
+    max-width: 93vw;
+    /*display: inline-block;*/
+}
+
+#nav1{
+    background-color: rgb(255, 252, 232);
+    width: 93vw;
+    position: relative;
+}
+
+#myCarousel {
+     margin: 5vh 0 0 0;
+ }
+
+.luboimg{
+    width: 93vw;
+    height: 20vh;
+}
+.m-c-d1{
+    width: 93vw;
+    background-color: rgb(249, 249, 249);
+    margin: -2vh 0 0 0;
+
+
+}
+
+.tab-h2 {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #0059b2;
+}
+.tab-p {
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #999;
+    margin: 20px 0 40px 0;
+}
+.tab1 {
+    margin: 30px 0;
+    color: #666;
+}
+.col-md-6{
+
+    margin: 0 0 15px 0
+}
+
+.tab1 .text-muted {
+    margin: 0 0 10px 0;
+    color: #999;
+
+}
+.tab1 .media-heading {
+    margin: 5px 0 20px 0;
+}
+.tab1 .col {
+    padding: 20px;
+}
+
+
+/*导航2*/
+.m-c-d2 {
+    width: 93vw;
+    background-color: rgb(249, 249, 249);
+    display: none
+
+}
+.m-c-d2  #about .list_cultures{
+    width: 20vw;
+   margin: 0 0 0 2vw;
+
+
+
+}
+
+.m-c-d2  #about .list_culture .list_culture_p{
+        text-indent: 1vw;
+}
+
+.m-c-d3{
+    width: 93vw;
+    /*height: 200vh;*/
+    background-color: rgb(249, 249, 249);
+    display: none;
+
+}
+.m-c-d3 #scenicSpot .conRow div>.thumbnail .caption .roughTitle{
+    text-align: center;
+}
+.m-c-d3 #scenicSpot .conRow div>.thumbnail .caption .roughLink{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.m-c-d4{
+    width: 93vw;
+    background-color: rgb(249, 249, 249);
+    display: none;
+
+}
+.m-c-d4 #foodshow .foodShow div>.thumbnail .caption .foodTitle{
+    text-align: center;
+}
+.m-c-d4 #foodshow .foodShow div>.thumbnail .caption .foodLink{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+/*悬浮窗*/
+
+/*右侧悬浮菜单*/
+.slide1{
+    width: 40px;
+    height:65px;
+    position: fixed;
+    top: 95%;
+    margin-top: -126px;
+    background: rgba(71, 142, 130, 0.27);
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    z-index: 999;
+    display:none;
+}
+.slide1 ul{
+    list-style: none;
+    position: relative;
+    top: 15px;
+    left: 5px;
+}
+
+.minnav>a{
+    display: inline-block;
+
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    text-decoration: none;
+    color: white;
+    font-size: 33px;
+}
+
+/*控制菜单的按钮*/
+
+
+.index_cy2{
+    width: 30px;
+    height: 30px;
+    background: url(../img/index_cy.png);
+    position: fixed;
+    right: 0;
+    top: 66%;
+    margin-top: 140px;
+    background-position: 30px 0;
+    cursor: pointer;
+    z-index: 3;
+
+}
+
+.index_cy{
+    width: 30px;
+    height: 30px;
+    background: url(../img/index_cy.png);
+    position: fixed;
+    right: 0;
+    top: 66%;;
+    margin-top: 140px;
+    background-position: 62px 0;
+    cursor: pointer;
+    z-index: 3;
+}
+/*手机屏幕*/
+
+
+@media (min-width: 360px) {
+
+    .m-c-d2 #about .list_culture {
+        width: 90vw;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+}
+@media (min-width: 992px) {
+    .m-c-d2 #about .list_culture {
+        width: 70vw;
+        padding: 0 1vw 0;
+        background: #e9f4ff;
+        font-size: 14px;
+    }
+}
